@@ -1,0 +1,12 @@
+nav.navbar.navbar-default.navbar-static-top.navbar-inverse
+  .container
+    .navbar-header
+      link-to 'index' class='navbar-brand' | Brand
+
+    ul.nav.navbar-nav
+      link-to 'index' tagName='li': a href=view.href Index
+      link-to 'component-test' tagName='li': a href=view.href Component Test
+      link-to 'helper-test' tagName='li': a href=view.href Helper Test
+
+.container
+  outlet
