@@ -1,2 +1,4 @@
+bs-alert message='test' type='info' dismissAfter=2 fade=true
+
 ul = each
   li {{this}}
