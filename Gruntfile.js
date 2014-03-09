@@ -170,12 +170,14 @@ module.exports = function(grunt) {
         "buildTemplates:dist",
         "buildScripts",
         "buildStyles",
+        "buildFonts",
         "buildIndexHTML:dist"
       ],
       buildDebug: [
         "buildTemplates:debug",
         "buildScripts",
         "buildStyles",
+        "buildFonts",
         "buildIndexHTML:debug"
       ]
     }
@@ -214,6 +216,11 @@ module.exports = function(grunt) {
                      'copy:cssToResult',
                      'autoprefixer:app'
                      ]));
+
+  // Fonts
+  grunt.registerTask('buildFonts', [
+                     'copy:fontsToResult'
+                     ]);
 
   // Index HTML
   grunt.registerTask('buildIndexHTML:dist', [

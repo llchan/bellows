@@ -24,6 +24,13 @@ module.exports = {
     dest: 'tmp/result/assets'
   },
 
+  fontsToResult: {
+    expand: true,
+    cwd: 'vendor/fontawesome',
+    src: ['fonts/*'],
+    dest: 'tmp/result/assets/'
+  },
+
   // Assembles everything in `tmp/result`.
   // The sole purpose of this task is to keep things neat. Gathering everything in one
   // place (tmp/dist) enables the subtasks of dist to only look there. Note: However,
