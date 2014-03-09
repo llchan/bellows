@@ -10,3 +10,5 @@ nav.navbar.navbar-default.navbar-static-top.navbar-inverse
 
 .container
   outlet
+
+bs-growl-notifications
